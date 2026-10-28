@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LATIL.IO Executive Session · 18.11.2026</title>
+<meta name="description" content="Escalar la IA con resultados y control del gasto. Encuentro presencial para 25 líderes de Tecnología y Finanzas. 18.11.2026 · Parque Patricios, CABA.">
+<!-- Reemplazar por URL absoluta (https://…) al publicar -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="LATIL.IO Executive Session · Escalar la IA con resultados y control del gasto">
+<meta property="og:description" content="Encuentro presencial para 25 líderes de Tecnología y Finanzas. Miércoles 18.11.2026 · 09:30 a 13:30 · Parque Patricios, CABA.">
+<meta property="og:image" content="assets/og-invitacion.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0D1030; --card:#1B1F45; --line:#2F3570; --indigo:#4F46E5; --lav:#A5B4FC;
+  --text:#fff; --muted:#C9CEEA; --soft:#D7DCF5; --sep:#4F5590;
+  --sans:'Schibsted Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  --pad:clamp(20px,5vw,48px); --gap-section:clamp(56px,9vw,104px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:var(--lav);text-underline-offset:3px}
+a:hover{color:#fff}
+a:focus-visible,button:focus-visible{outline:3px solid var(--lav);outline-offset:3px}
+h1,h2,h3,p{margin:0}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:var(--pad)}
+.section{padding-top:var(--gap-section)}
+.kicker{font-family:var(--mono);font-size:13px;letter-spacing:.16em;color:var(--lav);text-transform:uppercase}
+.h2{font-size:clamp(30px,4.4vw,46px);line-height:1.08;font-weight:800;letter-spacing:-.035em;text-wrap:balance}
+.head{display:flex;flex-direction:column;gap:12px;margin-bottom:32px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.split{display:grid;gap:32px 64px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+
+/* Botones */
+.btn{display:inline-block;padding:18px 34px;border-radius:999px;background:#fff;color:var(--bg);font-weight:700;font-size:19px;text-decoration:none;white-space:nowrap;transition:background .15s}
+.btn:hover{background:#C7D2FE;color:var(--bg)}
+.btn--sm{padding:11px 20px;font-size:16px}
+.btn--alt{background:var(--indigo);color:#fff;padding:14px 24px;font-size:16px}
+.btn--alt:hover{background:#6366F1;color:#fff}
+.note{font-size:15px;color:var(--lav);max-width:520px}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:20;background:rgba(13,16,48,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:16px;min-width:0}
+.brand__logo{padding:8px 14px;border-radius:10px;background:#fff;flex-shrink:0}
+.brand__logo img{height:26px;width:auto}
+.brand__label{font-family:var(--mono);font-size:13px;letter-spacing:.16em;color:var(--lav);white-space:nowrap}
+
+/* Hero */
+.hero{background:var(--bg);background-image:radial-gradient(60% 70% at 100% 0%,rgba(109,59,215,.5),rgba(109,59,215,0) 70%)}
+.hero .wrap{display:flex;flex-direction:column;gap:28px;padding-block:clamp(56px,10vw,120px) clamp(64px,10vw,112px)}
+.chip{align-self:flex-start;padding:8px 14px;border-radius:8px;background:var(--indigo);font-family:var(--mono);font-size:clamp(11px,3vw,13px);letter-spacing:clamp(.04em,.6vw,.12em);color:#fff;white-space:nowrap}
+.hero h1{max-width:900px;font-size:clamp(40px,7.4vw,84px);line-height:1;font-weight:800;letter-spacing:-.045em;text-wrap:balance}
+.hl{color:var(--lav)}
+.lead{max-width:720px;font-size:clamp(18px,2.2vw,22px);color:var(--soft);text-wrap:pretty}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;font-family:var(--mono);font-size:15px}
+.facts .sep{color:var(--sep)}
+.cta{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:8px}
+
+/* Por qué */
+.why{display:flex;flex-direction:column;gap:10px;padding:28px}
+.why__n{font-family:var(--mono);font-size:13px;color:var(--lav)}
+.why h3{font-size:22px;line-height:1.25;font-weight:700;letter-spacing:-.015em}
+.why p{color:var(--muted)}
+
+/* Qué vas a ver */
+.block{display:flex;flex-direction:column;gap:14px;padding:32px 28px}
+.block--featured{border-color:var(--indigo)}
+.block__kicker{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--lav)}
+.block__title{font-size:40px;line-height:1;font-weight:800;letter-spacing:-.035em}
+.block p{color:var(--muted);text-wrap:pretty}
+.block__item{display:flex;flex-direction:column;gap:8px}
+.block hr{border:0;height:1px;background:var(--line);margin:0}
+
+/* Agenda */
+.agenda{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.agenda li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0 14px 22px;margin-left:-2px;border-left:2px solid transparent}
+.agenda li.is-key{border-left-color:var(--lav)}
+.agenda time{font-family:var(--mono);font-size:15px;color:var(--lav);padding-top:2px}
+.agenda strong{display:block;font-size:17px;line-height:1.4;font-weight:600}
+.agenda span{font-size:14px;color:var(--lav)}
+
+/* Para quién */
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
+.chips li{padding:12px 18px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:16px}
+
+/* Sede */
+.venue{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding:clamp(24px,4vw,40px)}
+.venue__info{display:flex;flex-direction:column;gap:10px;padding-left:18px;border-left:3px solid var(--indigo)}
+.venue__addr{font-size:clamp(22px,3vw,30px);line-height:1.2;font-weight:800;letter-spacing:-.02em}
+.venue__info p{color:var(--muted)}
+
+/* FAQ */
+.faq{border-top:1px solid var(--line)}
+.faq__item{border-bottom:1px solid var(--line)}
+.faq__q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;background:none;border:0;color:#fff;font:600 18px/1.4 var(--sans);text-align:left;cursor:pointer}
+.faq__icon{flex-shrink:0;width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-family:var(--mono);color:var(--lav)}
+.faq__icon::before{content:"+"}
+.faq__q[aria-expanded="true"] .faq__icon::before{content:"−"}
+.faq__a{padding:0 44px 22px 0;color:var(--muted)}
+.faq__a[hidden]{display:none}
+
+/* CTA final */
+.final{padding-block:clamp(64px,10vw,120px)}
+.final .card{display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px;padding:clamp(40px,7vw,80px) clamp(20px,5vw,64px);border-radius:20px;background-image:radial-gradient(70% 90% at 100% 0%,rgba(109,59,215,.45),rgba(109,59,215,0) 70%)}
+.final h2{font-size:clamp(34px,5.4vw,60px);line-height:1.02;font-weight:800;letter-spacing:-.04em}
+.final .facts{justify-content:center;color:var(--soft)}
+
+/* Footer */
+.site-footer{background:#fff;color:var(--bg)}
+.site-footer .wrap{display:flex;flex-direction:column;gap:24px;padding-block:32px}
+.sponsors{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.sponsors__label{font-family:var(--mono);font-size:13px;letter-spacing:.14em;color:#4A5072}
+.sponsors__logos{display:flex;align-items:center;gap:32px}
+.logo-wiv{height:60px;width:136px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.logo-wiv img{height:70px;width:auto;max-width:none}
+.logo-dirmod{height:40px;width:auto;border-radius:6px}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;padding-top:20px;border-top:1px solid #E2E4EE;font-size:14px;line-height:1.55;color:#4A5072}
+.legal p{max-width:640px}
+.legal a{color:var(--indigo);font-weight:600}
+
+/* CTA fijo en celular */
+.sticky-cta{display:none}
+@media (max-width:719px){
+  .site-header .btn{display:none}
+  .sticky-cta{display:flex;flex-direction:column;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(13,16,48,.96);border-top:1px solid var(--line)}
+  .sticky-cta .btn{display:block;text-align:center;padding:15px 20px;font-size:17px}
+  .sticky-cta small{font-size:12px;line-height:1.4;color:var(--lav);text-align:center}
+  .site-footer{padding-bottom:108px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <a class="brand__logo" href="https://latil.io/" target="_blank" rel="noopener"><img src="assets/logo-latil.png" alt="LATIL.IO" width="120" height="26"></a>
+      <span class="brand__label">EXECUTIVE SESSION</span>
+    </div>
+    <a class="btn btn--sm" href="https://docs.google.com/forms/d/e/1FAIpQLSexLloiR2oEmBzGIwoWyL02x2MzwhTQ-04p6HyMBcRRFrVXzQ/viewform" target="_blank" rel="noopener">Solicitar lugar</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="chip">PRESENCIAL · BUENOS AIRES · 25 LUGARES</span>
+      <h1>Escalar la IA con resultados y <span class="hl">control del gasto</span></h1>
+      <p class="lead">Un encuentro para líderes de Tecnología y Finanzas: cómo conectar productividad, gobierno del gasto y resultados de negocio.</p>
+      <p class="facts"><span>18.11.2026 (miércoles)</span><span class="sep">·</span><span>09:30 a 13:30</span><span class="sep">·</span><span>Parque Patricios, CABA</span></p>
+      <div class="cta">
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSexLloiR2oEmBzGIwoWyL02x2MzwhTQ-04p6HyMBcRRFrVXzQ/viewform" target="_blank" rel="noopener">Solicitar lugar</a>
+        <p class="note">Cupo limitado a 25 lugares. El registro no confirma el lugar: LATIL.IO confirma cada participación por email.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="why-title">
+    <div class="head">
+      <span class="kicker">Por qué este encuentro</span>
+      <h2 class="h2" id="why-title">De probar herramientas a escalarlas con control</h2>
+    </div>
+    <div class="grid">
+      <article class="card why"><span class="why__n">01</span><h3>La IA ya está en producción</h3><p>El desafío pasó de probar herramientas a escalarlas.</p></article>
+      <article class="card why"><span class="why__n">02</span><h3>El gasto crece más rápido de lo que se puede atribuir</h3><p>Visibilidad por equipo, usuario y área.</p></article>
+      <article class="card why"><span class="why__n">03</span><h3>Hay que mostrar resultados</h3><p>Conectar la inversión con productividad, calidad y negocio.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="see-title">
+    <div class="head">
+      <span class="kicker">Qué vas a ver</span>
+      <h2 class="h2" id="see-title">Un lanzamiento, una sesión práctica y casos reales</h2>
+    </div>
+    <div class="grid">
+      <article class="card block block--featured">
+        <span class="block__kicker">LANZAMIENTO EXCLUSIVO</span>
+        <div class="block__item"><span class="block__title">WIV.AIR</span><p>Token optimization &amp; gobierno del gasto en IA</p></div>
+        <hr>
+        <div class="block__item"><span class="block__title">WIV.AI</span><p>Cloud infrastructure &amp; FinOps continuo</p></div>
+      </article>
+      <article class="card block">
+        <span class="block__kicker">AMAZON WEB SERVICES · SESIÓN DIRMOD</span>
+        <span class="block__title">AI-DLC</span>
+        <p>IA en el ciclo de desarrollo: calidad, velocidad y productividad de los equipos de ingeniería.</p>
+      </article>
+      <article class="card block">
+        <span class="block__kicker">CASOS Y PRÓXIMOS PASOS</span>
+        <span class="block__title">Adopción</span>
+        <p>Casos de éxito concretos y programas y apoyos para adoptar estos frameworks y plataformas en tu organización.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap section split" aria-labelledby="agenda-title">
+    <div class="head">
+      <span class="kicker">Agenda</span>
+      <h2 class="h2" id="agenda-title">Miércoles 18 de noviembre</h2>
+      <p style="color:var(--muted)">Hora de Argentina. Agenda sujeta a ajustes.</p>
+    </div>
+    <ol class="agenda">
+      <li><time>09:30</time><div><strong>Acreditación, desayuno y networking</strong></div></li>
+      <li><time>10:00</time><div><strong>Apertura: objetivos del encuentro</strong><span>LATIL.IO</span></div></li>
+      <li><time>10:15</time><div><strong>Del control del gasto cloud al gobierno económico de la IA</strong><span>WIV</span></div></li>
+      <li class="is-key"><time>10:35</time><div><strong>Lanzamiento y demo de WIV.AIR</strong><span>WIV</span></div></li>
+      <li><time>11:15</time><div><strong>Coffee break</strong></div></li>
+      <li><time>11:30</time><div><strong>AI-DLC: cómo transformar el desarrollo de software con IA y medir su impacto</strong><span>DirMOD</span></div></li>
+      <li><time>12:15</time><div><strong>Mesa ejecutiva: adopción, métricas y control</strong></div></li>
+      <li><time>12:40</time><div><strong>Conclusiones y próximos pasos</strong></div></li>
+      <li><time>12:50</time><div><strong>Almuerzo liviano y networking</strong></div></li>
+    </ol>
+  </section>
+
+  <section class="wrap section" aria-labelledby="who-title">
+    <div class="head">
+      <span class="kicker">Para quién es</span>
+      <h2 class="h2" id="who-title" style="max-width:760px;font-size:clamp(28px,4vw,40px)">Pensado para quienes deciden o influyen en la adopción de IA y en su presupuesto.</h2>
+    </div>
+    <ul class="chips">
+      <li>CIO / CTO / Dirección de Ingeniería</li>
+      <li>FinOps / Cloud Economics / IT Finance</li>
+      <li>CFO / FP&amp;A vinculado a Tecnología</li>
+      <li>Head of AI / Platform / DevEx</li>
+    </ul>
+  </section>
+
+  <section class="wrap section" aria-label="Sede">
+    <div class="card venue">
+      <div class="venue__info">
+        <span class="kicker">Sede</span>
+        <span class="venue__addr">Av. Caseros 3039, piso 5</span>
+        <p>Oficinas de TD SYNNEX · Parque Patricios, CABA</p>
+      </div>
+      <a class="btn btn--alt" href="https://maps.google.com/?q=Av.+Caseros+3039,+CABA" target="_blank" rel="noopener">Cómo llegar</a>
+    </div>
+  </section>
+
+  <section class="wrap section split" aria-labelledby="faq-title">
+    <div class="head">
+      <span class="kicker">Preguntas frecuentes</span>
+      <h2 class="h2" id="faq-title">Antes de solicitar tu lugar</h2>
+    </div>
+    <div class="faq">
+      <div class="faq__item"><button class="faq__q" aria-expanded="true" aria-controls="faq1">¿Tiene costo?<span class="faq__icon" aria-hidden="true"></span></button><p class="faq__a" id="faq1">No, es sin cargo y por invitación.</p></div>
+      <div class="faq__item"><button class="faq__q" aria-expanded="false" aria-controls="faq2">¿El registro confirma mi lugar?<span class="faq__icon" aria-hidden="true"></span></button><p class="faq__a" id="faq2" hidden>No. Revisamos cada solicitud y te confirmamos por email dentro de dos días hábiles.</p></div>
+      <div class="faq__item"><button class="faq__q" aria-expanded="false" aria-controls="faq3">¿Puedo ir con alguien de mi equipo?<span class="faq__icon" aria-hidden="true"></span></button><p class="faq__a" id="faq3" hidden>La invitación es personal. Si creés que otra persona de tu equipo debería participar, indicalo en el formulario o escribinos.</p></div>
+      <div class="faq__item"><button class="faq__q" aria-expanded="false" aria-controls="faq4">¿Habrá transmisión online?<span class="faq__icon" aria-hidden="true"></span></button><p class="faq__a" id="faq4" hidden>No, es un encuentro exclusivamente presencial.</p></div>
+      <div class="faq__item"><button class="faq__q" aria-expanded="false" aria-controls="faq5">¿Qué incluye?<span class="faq__icon" aria-hidden="true"></span></button><p class="faq__a" id="faq5" hidden>Desayuno, coffee break y almuerzo liviano con networking.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap final">
+    <div class="card">
+      <h2>Sumate a la conversación</h2>
+      <p class="facts"><span>18.11.2026</span><span class="sep">·</span><span>09:30 a 13:30</span><span class="sep">·</span><span>Parque Patricios, CABA</span></p>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSexLloiR2oEmBzGIwoWyL02x2MzwhTQ-04p6HyMBcRRFrVXzQ/viewform" target="_blank" rel="noopener">Solicitar lugar</a>
+      <p class="note">Cupo limitado a 25 lugares. El registro no confirma el lugar: LATIL.IO confirma cada participación por email.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="sponsors">
+      <span class="sponsors__label">ORGANIZA LATIL.IO · SPONSORS</span>
+      <div class="sponsors__logos">
+        <div class="logo-wiv"><img src="assets/logo-wiv.png" alt="WIV"></div>
+        <img class="logo-dirmod" src="assets/logo-dirmod.png" alt="DirMOD">
+      </div>
+    </div>
+    <div class="legal">
+      <p>LATIL.IO usa tus datos solo para gestionar tu solicitud y la comunicación sobre este evento. Consultas o eliminación de datos: <a href="mailto:contact@latil.com">contact@latil.com</a>.</p>
+      <a href="https://latil.io/" target="_blank" rel="noopener">latil.io</a>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSexLloiR2oEmBzGIwoWyL02x2MzwhTQ-04p6HyMBcRRFrVXzQ/viewform" target="_blank" rel="noopener">Solicitar lugar</a>
+  <small>Cupo limitado a 25 lugares. LATIL.IO confirma cada participación por email.</small>
+</div>
+
+<script>
+document.querySelectorAll('.faq__q').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.faq__q').forEach(function (b) {
+      b.setAttribute('aria-expanded', 'false');
+      document.getElementById(b.getAttribute('aria-controls')).hidden = true;
+    });
+    if (!open) {
+      btn.setAttribute('aria-expanded', 'true');
+      document.getElementById(btn.getAttribute('aria-controls')).hidden = false;
+    }
+  });
+});
+</script>
+</body>
+</html>
