@@ -84,6 +84,24 @@ h1,h2,h3,p{margin:0}
 .block__item{display:flex;flex-direction:column;gap:8px}
 .block hr{border:0;height:1px;background:var(--line);margin:0}
 
+/* Speakers */
+.speakers{display:flex;flex-direction:column;gap:16px}
+.speaker{display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);overflow:hidden}
+.speaker__photo{width:100%;height:100%;aspect-ratio:1;object-fit:cover;background:#fff}
+.speaker__body{display:flex;flex-direction:column;gap:8px;padding:clamp(20px,3vw,32px)}
+.speaker__top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.speaker h3{font-size:clamp(24px,3vw,32px);line-height:1.1;font-weight:800;letter-spacing:-.03em}
+.speaker__org{flex-shrink:0;font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--lav);padding-top:8px}
+.speaker__role{font-weight:600;color:var(--lav);text-wrap:balance}
+.speaker__bio{color:var(--muted);text-wrap:pretty}
+@media (max-width:599px){
+  .speaker{grid-template-columns:96px minmax(0,1fr)}
+  .speaker__photo{height:auto;align-self:start}
+  .speaker__top{flex-direction:column-reverse;gap:4px}
+  .speaker__org{padding-top:0}
+  .speaker__bio{font-size:15px}
+}
+
 /* Agenda */
 .agenda{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
 .agenda li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:14px 0 14px 22px;margin-left:-2px;border-left:2px solid transparent}
@@ -201,6 +219,39 @@ h1,h2,h3,p{margin:0}
         <span class="block__kicker">CASOS Y PRÓXIMOS PASOS</span>
         <span class="block__title">Adopción</span>
         <p>Casos de éxito concretos y programas y apoyos para adoptar estos frameworks y plataformas en tu organización.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="speakers-title">
+    <div class="head">
+      <span class="kicker">Speakers confirmados</span>
+      <h2 class="h2" id="speakers-title">Quiénes nos acompañan</h2>
+    </div>
+    <div class="speakers">
+      <article class="card speaker">
+        <img class="speaker__photo" src="assets/speaker-kirsman.jpg" alt="Ariel Kirsman" width="400" height="400" loading="lazy">
+        <div class="speaker__body">
+          <div class="speaker__top"><h3>Ariel Kirsman</h3><span class="speaker__org">AWS</span></div>
+          <p class="speaker__role">Manager, Solutions Architecture – Argentina, Paraguay &amp; Uruguay</p>
+          <p class="speaker__bio">Más de 30 años ayudando a grandes organizaciones a escalar su transformación tecnológica y adoptar IA en AWS.</p>
+        </div>
+      </article>
+      <article class="card speaker">
+        <img class="speaker__photo" src="assets/speaker-alazraqui.jpg" alt="Alejandro Alazraqui" width="400" height="400" loading="lazy">
+        <div class="speaker__body">
+          <div class="speaker__top"><h3>Alejandro Alazraqui</h3><span class="speaker__org">DIRMOD</span></div>
+          <p class="speaker__role">AI Engineer &amp; Technical AI Lead</p>
+          <p class="speaker__bio">Especialista certificado en IA Generativa en AWS, enfocado en soluciones agénticas y flujos de desarrollo acelerados por IA en producción.</p>
+        </div>
+      </article>
+      <article class="card speaker">
+        <img class="speaker__photo" src="assets/speaker-surijon.jpg" alt="Nicolás Surijón" width="400" height="400" loading="lazy">
+        <div class="speaker__body">
+          <div class="speaker__top"><h3>Nicolás Surijón</h3><span class="speaker__org">LATIL.IO</span></div>
+          <p class="speaker__role">Chief Strategy Officer en Latil · VP Strategic Alliances &amp; Accounts en DirMOD</p>
+          <p class="speaker__bio">Amplia trayectoria liderando estrategias digitales, alianzas corporativas y adopción de tecnologías emergentes en Latinoamérica.</p>
+        </div>
       </article>
     </div>
   </section>
